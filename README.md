@@ -44,11 +44,11 @@ Follow these instructions to set up the project locally.
 ### Running the Project
 
 Start the development server:
-`   npm run dev
-  `
+`  npm run dev
+ `
 or
-`   yarn dev
-  `
+`  yarn dev
+ `
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -60,11 +60,6 @@ This project includes several components and utilities that you can use and modi
 - `app/`: Contains the Next.js app.
 - `public/`: Contains public assets such as images and videos.
 - `lib/`: Contains utility/data.
-
-## Contributing
-
-Feel free to fork this repository and submit pull requests. Any contributions, whether it be improvements, bug fixes, or new features, are greatly appreciated!
-Please make sure to read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) and the [Contribution Guidelines](CONTRIBUTE.md) before contributing.
 
 ## Contact
 
