@@ -1,7 +1,7 @@
 'use client';
 
 import { useSectionInView } from '@/common/lib/hooks';
-import portfolioImg from '@/../public/images/photo.jpg';
+import portfolioImg from '@/../public/images/me.jpeg';
 import { smoothScrollTo } from '@/common/lib/utils';
 import SectionDivider from '@/common/components/shared/section-divider';
 import SectionHeading from '@/common/components/shared/section-heading';
@@ -46,10 +46,14 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  I&apos;m Front-end developer with expertise in TypeScript,
-                  React & Next.js. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
+                  I&apos;m a Full-Stack Software Engineer specializing in
+                  scalable web applications and cloud-native systems. With
+                  hands-on experience in TypeScript, React, Node.js, Java Spring
+                  Boot, and cloud platforms like AWS and Azure, I build
+                  intuitive, high-performance solutions that improve efficiency
+                  and user engagement. I&apos;m passionate about clean
+                  architecture, automation, and creating seamless
+                  developer-to-deployment pipelines.
                 </span>
                 <span>
                   Seeking for Web Development opportunities where I can leverage
@@ -65,7 +69,7 @@ export default function About() {
                     }}
                     className="w-52 lg:w-40"
                   >
-                    <span className="bg-[#ffcbb4] text-2xl font-bold uppercase dark:bg-[#ddbea9] lg:normal-case">
+                    <span className="bg-[#cce7e8] text-2xl font-bold uppercase dark:bg-[#42a5ce] lg:normal-case">
                       Contact me!
                     </span>
                   </Link>
@@ -74,7 +78,7 @@ export default function About() {
             </div>
             <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
               <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-30" />
+                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#cce7e8] via-[#50bfdb] to-[#42a5ce] transition-opacity group-hover:opacity-20" />
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
