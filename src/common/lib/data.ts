@@ -74,29 +74,62 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Software Engineer Intern',
-    location: 'E-Care Medical Clinic, Houston, United States',
+    title: 'Software Engineer',
+    location: 'Cloudforce Technologies, Illinois, United States',
     description:
-      'Designed and developed the main website and Learning Management System (LMS) for medical education programs using a modern tech stack. Implemented the frontend with Next.js and Tailwind CSS, and built the backend using .NET and C#. Managed database services on Microsoft Azure for scalable and secure data handling.',
+      'Developed scalable full-stack solutions using React.js, Node.js, and Java Spring Boot. Improved system performance, built RESTful APIs, and architected event-driven data systems with PostgreSQL and Kafka. Led DevOps automation on AWS/Azure and collaborated in Agile teams to deliver features efficiently.',
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Jun 2025 – Present',
+    date: 'May 2024 – Present',
   },
   {
-    title: "Master's in Computer Science",
-    location: 'University of Houston, Texas, USA',
+    title: "Master's in Management Information Systems  (MIS)",
+    location: 'Lamar University, Texas, USA',
     description:
-      'Focus in Machine Learning, Cloud Computing, and Computer Networks. CGPA: 3.67',
+      'Focus in Full Stack Development, Cyber Securities and Data Mining and Predictive Analytics. CGPA: 4.0/4.0',
     icon: React.createElement(BookIcon),
-    date: 'Aug 2023 – May 2025',
+    date: 'Aug 2022 – May 2024',
   },
   {
+    title: 'Student Tech Associate',
+    location: 'University of Houston-Clear Lake, Houston, TX',
+    description:
+      'Administered Linux/Unix network infrastructure for 180+ rooms, boosting classroom technology uptime. Automated ticketing in PeopleSoft to resolve 50+ daily technical issues, reducing resolution time by over 30%.',
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Aug 2022 – Jan 2023',
+  },
+  /*{
     title: 'Custom Software Engineering Associate',
     location: 'Accenture Solutions Pvt. Ltd, Hyderabad, India',
     description:
       'Designed and implemented scalable microservices using Java Spring Boot, reducing API response times by 30%. Led cloud deployment automation on AWS and Azure using Terraform. Mentored junior developers and improved cross-functional collaboration across Agile teams.',
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Aug 2022 – Jun 2023',
+  },*/
+  {
+  title: 'Software Engineer',
+  location: 'MRF LTD, Hyderabad, Telangana',
+  description:
+    'Engineered a full-stack workflow app with Java Spring Boot and JavaScript, automating business processes and reducing manual effort by 30%. Built secure RESTful APIs and a real-time KPI dashboard, driving a 15% increase in data-driven planning. Led zero-downtime migration of 50,000+ customer records to Oracle DB, ensuring data integrity and compliance.',
+  icon: React.createElement(BriefcaseBusinessIcon),
+  date: 'Aug 2021 – July 2022',
   },
+  {
+  title: 'Manufacturing Intern',
+  location: 'Bharath Dynamics Limited, Hyderabad, India',
+  description:
+    'Programmed CNC machinery control logic to achieve 0.01mm precision and reduce material waste by 15%. Analyzed production data to identify bottlenecks, improving product reliability and workflow efficiency.',
+  icon: React.createElement(BriefcaseBusinessIcon),
+  date: 'Jan 2021 – Jul 2021',
+  },
+  {
+  title: 'Bachelor of Technology in Mechanical Engineering',
+  location: 'Vellore Institute of Technology, Andhra Pradesh, India',
+  description: 'Focus on Object Oriented Programing, Data Structures and Algorithms, Thermodynamics and Fluid Dynamics GPA: 3.2',
+  icon: React.createElement(BookIcon),
+  date: 'Aug 2017 – May 2021',
+  },
+
+/*
   {
     title: 'Custom Software Engineering Associate',
     location: 'Accenture Solutions Pvt. Ltd, Hyderabad, India',
@@ -112,7 +145,7 @@ export const experiencesData = [
       'Built ML models for predictive maintenance in aerospace logistics. Enhanced the company website with real-time dashboards for better decision-making.',
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Feb 2021 – Jul 2021',
-  },
+  },*/
 ] as const;
 
 export const images = {
@@ -204,7 +237,7 @@ export const projectsData = [
       'MongoDB',
     ],
     imageUrl: carcatalogImg,
-    link: 'https://github.com/bengideon',
+    link: 'https://github.com/AkhileshwarReddySongala',
   },
   {
     title: 'Financial Risk Management Platform',
@@ -212,7 +245,7 @@ export const projectsData = [
       'Developed a real-time risk analysis system using Python and SQL. Automated data ingestion and deployed scalable dashboards with Azure and Docker. Reduced detection latency by 40% and improved decision-making insights.',
     tags: ['Python', 'SQL', 'React.js', 'Node.js', 'Docker', 'Azure'],
     imageUrl: projectmanagementImg,
-    link: 'https://github.com/bengideon',
+    link: 'https://github.com/AkhileshwarReddySongala',
   },
 ] as const;
 

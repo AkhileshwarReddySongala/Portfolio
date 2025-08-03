@@ -10,7 +10,7 @@ import Footer from '@/common/components/shared/footer';
 import { ModeToggle } from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
-  title: 'Ben Gideon Dokiburra | Portfolio',
+  title: 'Akhileshwar Reddy Songala | Portfolio',
   description:
     'Check out modern and stylish porfolio of an experienced Web Developer Ben Gideon Dokiburra! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
 };
