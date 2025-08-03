@@ -63,6 +63,6 @@ This project includes several components and utilities that you can use and modi
 
 ## Contact
 
-If you want to get in touch, you can reach me at [Ben Gideon](mailto:bengideondokiburra@gmail.com).
+If you want to get in touch, you can reach me at [Akhileshwar Reddy Songala](mailto:akhileshwar.songala@gmail.com).
 
 Thank you for checking out my portfolio project!
