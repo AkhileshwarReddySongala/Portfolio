@@ -9,7 +9,10 @@ import surgeImg from '@/../public/images/surge.png';
 import portfolioImg from '@/../public/images/portfolio.png';
 import auditMasterImg from '@/../public/images/audit-master.png';
 import accountingImg from '@/../public/images/accounting.jpg';
+import saralyticsImg from '@/../public/images/saralytics.jpg';
+import spendifyImg from '@/../public/images/spendify.png';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
+
 
 export const links = [
   {
@@ -77,7 +80,7 @@ export const experiencesData = [
     title: 'Software Engineer',
     location: 'Cloudforce Technologies, Illinois, United States',
     description:
-      'Developed scalable full-stack solutions using React.js, Node.js, and Java Spring Boot. Improved system performance, built RESTful APIs, and architected event-driven data systems with PostgreSQL and Kafka. Led DevOps automation on AWS/Azure and collaborated in Agile teams to deliver features efficiently.',
+      'Engineered scalable Python microservices and backend APIs with Docker and Kubernetes. Built automated AWS infrastructure using Terraform and established Jenkins CI/CD pipelines. Improved application latency and handled increased traffic reliably.',
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'May 2024 – Present',
   },
@@ -106,46 +109,46 @@ export const experiencesData = [
     date: 'Aug 2022 – Jun 2023',
   },*/
   {
-  title: 'Software Engineer',
-  location: 'MRF LTD, Hyderabad, Telangana',
-  description:
-    'Engineered a full-stack workflow app with Java Spring Boot and JavaScript, automating business processes and reducing manual effort by 30%. Built secure RESTful APIs and a real-time KPI dashboard, driving a 15% increase in data-driven planning. Led zero-downtime migration of 50,000+ customer records to Oracle DB, ensuring data integrity and compliance.',
-  icon: React.createElement(BriefcaseBusinessIcon),
-  date: 'Aug 2021 – July 2022',
+    title: 'Software Engineer',
+    location: 'MRF LTD, Hyderabad, Telangana',
+    description:
+      'Engineered a full-stack workflow app with Java Spring Boot and JavaScript, automating business processes and reducing manual effort by 30%. Built secure RESTful APIs and a real-time KPI dashboard, driving a 15% increase in data-driven planning. Led zero-downtime migration of 50,000+ customer records to Oracle DB, ensuring data integrity and compliance.',
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Aug 2021 – July 2022',
   },
   {
-  title: 'Manufacturing Intern',
-  location: 'Bharath Dynamics Limited, Hyderabad, India',
-  description:
-    'Programmed CNC machinery control logic to achieve 0.01mm precision and reduce material waste by 15%. Analyzed production data to identify bottlenecks, improving product reliability and workflow efficiency.',
-  icon: React.createElement(BriefcaseBusinessIcon),
-  date: 'Jan 2021 – Jul 2021',
+    title: 'Manufacturing Intern',
+    location: 'Bharath Dynamics Limited, Hyderabad, India',
+    description:
+      'Programmed CNC machinery control logic to achieve 0.01mm precision and reduce material waste by 15%. Analyzed production data to identify bottlenecks, improving product reliability and workflow efficiency.',
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Jan 2021 – Jul 2021',
   },
   {
-  title: 'Bachelor of Technology in Mechanical Engineering',
-  location: 'Vellore Institute of Technology, Andhra Pradesh, India',
-  description: 'Focus on Object Oriented Programing, Data Structures and Algorithms, Thermodynamics and Fluid Dynamics GPA: 3.2',
-  icon: React.createElement(BookIcon),
-  date: 'Aug 2017 – May 2021',
+    title: 'Bachelor of Technology in Mechanical Engineering',
+    location: 'Vellore Institute of Technology, Andhra Pradesh, India',
+    description: 'Focus on Object Oriented Programing, Data Structures and Algorithms, Thermodynamics and Fluid Dynamics GPA: 3.2',
+    icon: React.createElement(BookIcon),
+    date: 'Aug 2017 – May 2021',
   },
 
-/*
-  {
-    title: 'Custom Software Engineering Associate',
-    location: 'Accenture Solutions Pvt. Ltd, Hyderabad, India',
-    description:
-      'Developed and automated risk exposure processes using Python, reducing manual effort by 65%. Collaborated with global teams to analyze SQL reports and improve project delivery using Agile (Kanban), JIRA, and qTest.',
-    icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Aug 2021 – Jul 2022',
-  },
-  {
-    title: 'Software Engineer Intern',
-    location: 'Plural Technology Private Limited, Pune, India',
-    description:
-      'Built ML models for predictive maintenance in aerospace logistics. Enhanced the company website with real-time dashboards for better decision-making.',
-    icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Feb 2021 – Jul 2021',
-  },*/
+  /*
+    {
+      title: 'Custom Software Engineering Associate',
+      location: 'Accenture Solutions Pvt. Ltd, Hyderabad, India',
+      description:
+        'Developed and automated risk exposure processes using Python, reducing manual effort by 65%. Collaborated with global teams to analyze SQL reports and improve project delivery using Agile (Kanban), JIRA, and qTest.',
+      icon: React.createElement(BriefcaseBusinessIcon),
+      date: 'Aug 2021 – Jul 2022',
+    },
+    {
+      title: 'Software Engineer Intern',
+      location: 'Plural Technology Private Limited, Pune, India',
+      description:
+        'Built ML models for predictive maintenance in aerospace logistics. Enhanced the company website with real-time dashboards for better decision-making.',
+      icon: React.createElement(BriefcaseBusinessIcon),
+      date: 'Feb 2021 – Jul 2021',
+    },*/
 ] as const;
 
 export const images = {
@@ -154,6 +157,8 @@ export const images = {
   filedriveImg,
   projectmanagementImg,
   reactfoodImg,
+  saralyticsImg,
+  spendifyImg,
 };
 
 // export const projectsData = [
@@ -225,26 +230,42 @@ export const images = {
 
 export const projectsData = [
   {
-    title: 'Scalable Virtual Storefront',
+    title: 'Saralytics - AI-Powered Business Intelligence Dashboard',
     description:
-      'Built an e-commerce platform supporting 10,000+ users. Integrated Stripe API and Twilio for secure payments and notifications. Delivered 30% faster API responses with GraphQL and improved engagement by 25% through responsive UI.',
+      'Architected a full-stack AI analytics platform with Django and dynamic JavaScript. Created a hybrid AI pipeline using Gemini 2.5 Flash and Ollama. Engineered a "Predictive Analyst" agent using scikit-learn for time-series forecasting. Developed a Text-to-SQL Visualization Engine for real-time chart generation from natural language.',
     tags: [
-      'React.js',
-      'Node.js',
-      'Express.js',
-      'GraphQL',
-      'Stripe API',
-      'MongoDB',
+      'Python',
+      'Django',
+      'Gemini 2.5 Flash',
+      'Ollama',
+      'scikit-learn',
+      'JavaScript',
     ],
-    imageUrl: carcatalogImg,
+    imageUrl: saralyticsImg,
     link: 'https://github.com/AkhileshwarReddySongala',
   },
   {
-    title: 'Financial Risk Management Platform',
+    title: 'Spendify – Personal Finance Management Application',
     description:
-      'Developed a real-time risk analysis system using Python and SQL. Automated data ingestion and deployed scalable dashboards with Azure and Docker. Reduced detection latency by 40% and improved decision-making insights.',
-    tags: ['Python', 'SQL', 'React.js', 'Node.js', 'Docker', 'Azure'],
-    imageUrl: projectmanagementImg,
+      'Developed a full-stack finance app with Python/Flask, featuring secure authentication and session management. Engineered full CRUD functionality for transactions and designed an interactive dashboard with real-time budget tracking. Built a responsive mobile-first frontend using Tailwind CSS and Alpine.js.',
+    tags: [
+      'Python',
+      'Flask',
+      'SQLAlchemy',
+      'JavaScript',
+      'Alpine.js',
+      'Tailwind CSS',
+      'Chart.js',
+    ],
+    imageUrl: spendifyImg,
+    link: 'https://github.com/AkhileshwarReddySongala',
+  },
+  {
+    title: 'Developer Portfolio Website',
+    description:
+      'Designed and built a fully responsive personal portfolio using modern HTML5, CSS3, and JavaScript, deployed to Vercel to demonstrate a complete development-to-production workflow.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Vercel', 'Next.js', 'React', 'Tailwind'],
+    imageUrl: portfolioImg,
     link: 'https://github.com/AkhileshwarReddySongala',
   },
 ] as const;
@@ -253,7 +274,6 @@ export const skillsData = [
   // 🌐 Frontend
   ['HTML', '/svgs/file-type-html.svg'],
   ['CSS', '/svgs/file-type-css.svg'],
-  ['Sass', '/svgs/Sass.svg'],
   ['JavaScript', '/svgs/javascript-js.svg'],
   ['TypeScript', '/svgs/typescript-icon.svg'],
   ['React', '/svgs/react.svg'],
@@ -265,19 +285,28 @@ export const skillsData = [
   ['Shadcn', '/svgs/shadcnui.svg'],
 
   // 🛠️ Backend
+  ['Java', '/svgs/java-icon.svg'],
+  ['C++', '/svgs/cplusplus.svg'],
+  ['Python', '/svgs/python.svg'],
+  ['Django', '/svgs/django.svg'],
+  ['FastAPI', '/svgs/fastapi.svg'],
   ['Node.js', '/svgs/node-js.svg'],
   ['Express', '/svgs/express-original.svg'],
-  ['Golang', '/svgs/golang.svg'],
   ['Clerk', '/svgs/clerk.svg'],
   ['Axios', '/svgs/axios.svg'],
 
   // 🗄️ Databases
-  ['MongoDB', '/svgs/mongodb-original.svg'],
+  ['Elasticsearch', '/svgs/elasticsearch.svg'],
+  ['Kafka', '/svgs/kafka.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
+  ['MongoDB', '/svgs/mongodb-original.svg'],
   ['MySQL', '/svgs/MySQL.svg'],
+  ['Oracle', '/svgs/oracle.svg'],
   ['Prisma', '/svgs/file-type-light-prisma.svg'],
 
   // ☁️ DevOps / Infra
+  ['Terraform', '/svgs/terraform.svg'],
+  ['Kubernetes', '/svgs/kubernetes.svg'],
   ['Docker', '/svgs/Docker.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
 
@@ -286,6 +315,7 @@ export const skillsData = [
   ['Tanstack Table', '/svgs/db-table-svgrepo-com.svg'],
   ['Git', '/svgs/git.svg'],
   ['GitHub', '/svgs/github.svg'],
+  ['Bash', '/svgs/bash.svg'],
 
   // ➕ Misc
   ['', '/svgs/etc.svg'],

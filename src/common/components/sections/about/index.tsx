@@ -46,14 +46,14 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  I&apos;m a Full-Stack Software Engineer specializing in
-                  scalable web applications and cloud-native systems. With
-                  hands-on experience in TypeScript, React, Node.js, Java Spring
-                  Boot, and cloud platforms like AWS and Azure, I build
-                  intuitive, high-performance solutions that improve efficiency
-                  and user engagement. I&apos;m passionate about clean
-                  architecture, automation, and creating seamless
-                  developer-to-deployment pipelines.
+                  I&apos;m a Full-Stack Software Engineer specializing in scalable
+                  web applications and cloud-native systems. With hands-on
+                  experience in TypeScript, React, Node.js, Python, and cloud
+                  platforms like AWS and Azure, I build intuitive,
+                  high-performance solutions. I graduated with a 4.0/4.0 GPA from
+                  Lamar University, receiving the Graduate Studies Award 2023.
+                  I&apos;m passionate about clean architecture, automation, and
+                  creating seamless developer to deployment pipelines.
                 </span>
                 <span>
                   Seeking for Web Development opportunities where I can leverage

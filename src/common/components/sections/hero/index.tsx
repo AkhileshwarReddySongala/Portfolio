@@ -50,6 +50,13 @@ export default function Hero() {
               </motion.span>
               <br />
               <TextAnimation delay={1} baseText={`I'm Akhileshwar Reddy Songala`} />
+              <motion.span
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="mt-4 text-center text-lg font-medium text-gray-700 dark:text-gray-300 md:text-xl"
+              >
+              </motion.span>
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
@@ -72,7 +79,7 @@ export default function Hero() {
 
               <a
                 className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
-                href="/Akhil_Resume.pdf"
+                href="/Akhileshwar%20Reddy%20Resume%20Full%20Stack.pdf"
                 download
               >
                 <span>Download CV</span>
