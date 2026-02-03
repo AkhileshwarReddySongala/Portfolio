@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat as FontMontserrat } from 'next/font/google';
+import { Montserrat as FontMontserrat, Inter, JetBrains_Mono } from 'next/font/google';
 import { cn } from '@/common/lib/utils';
 import '@/common/styles/globals.css';
 import { Toaster } from 'react-hot-toast';
@@ -19,6 +19,12 @@ const fontMontserrat = FontMontserrat({
   subsets: ['latin'],
 });
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,8 +34,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          'relative flex items-center justify-center',
-          fontMontserrat.className,
+          'relative flex items-center justify-center font-sans',
+          inter.variable,
+          jetbrainsMono.variable
         )}
       >
         <div className="flex min-h-screen w-full flex-col">

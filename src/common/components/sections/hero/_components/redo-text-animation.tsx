@@ -70,7 +70,7 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   }, []);
 
   return (
-    <motion.span className="h-32 max-w-96 bg-[#cce7e8] text-[1.2rem] font-bold dark:bg-[#42a5ce] md:text-[1.5rem] lg:text-[1.7rem]">
+    <motion.span className="inline-block min-h-[1.5em] text-lg font-bold text-neonViolet font-mono md:text-xl">
       {displayText}
     </motion.span>
   );

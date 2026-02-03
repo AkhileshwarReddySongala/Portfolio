@@ -12,12 +12,12 @@ export default function Projects() {
 
   return (
     <section
-      className="flex min-h-screen w-full scroll-mt-28 flex-col items-center justify-center dark:bg-darkBg dark:text-white"
+      className="flex min-h-screen w-full scroll-mt-28 flex-col items-center justify-center text-white"
       id="projects"
       ref={ref}
     >
       <SectionHeading>Projects</SectionHeading>
-      <div className="my-24">
+      <div className="my-24 grid grid-cols-1 gap-8 lg:grid-cols-2 max-w-6xl px-4">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />

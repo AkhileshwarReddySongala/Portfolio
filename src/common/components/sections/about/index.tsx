@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <motion.section
-      className="z-50 flex h-[1000px] w-full flex-col items-center justify-start leading-8 dark:bg-darkBg dark:text-white md:scroll-mt-4 lg:h-[1100px] lg:scroll-mt-24"
+      className="z-50 flex h-[1000px] w-full flex-col items-center justify-start leading-8 text-white md:scroll-mt-4 lg:h-[1100px] lg:scroll-mt-24"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function About() {
       <div className="flex w-full flex-col items-center pt-8">
         <SectionHeading>About Me</SectionHeading>
         <motion.div
-          className="w-full overflow-hidden px-4 py-12 sm:w-[60%] sm:text-center lg:h-[700px] lg:w-[1040px] xl:w-[1180px]"
+          className="glass-card w-full overflow-hidden px-10 py-12 sm:w-[80%] sm:text-center lg:h-[700px] lg:w-[1040px] xl:w-[1180px] rounded-2xl border border-white/10"
           ref={divRef}
           style={{
             scale: scaleProgess,
@@ -42,43 +42,11 @@ export default function About() {
             transform: 'translateZ(0)',
           }}
         >
-          <div className="antialiased group relative w-full">
-            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
-              <div className="flex h-full flex-col justify-center gap-6">
-                <span>
-                  I&apos;m a Full-Stack Software Engineer specializing in scalable
-                  web applications and cloud-native systems. With hands-on
-                  experience in TypeScript, React, Node.js, Python, and cloud
-                  platforms like AWS and Azure, I build intuitive,
-                  high-performance solutions. I graduated with a 4.0/4.0 GPA from
-                  Lamar University, receiving the Graduate Studies Award 2023.
-                  I&apos;m passionate about clean architecture, automation, and
-                  creating seamless developer to deployment pipelines.
-                </span>
-                <span>
-                  Seeking for Web Development opportunities where I can leverage
-                  my skills to create meaningful connections between products
-                  and users.
-                </span>
-                <p className="flex flex-col items-start sm:items-center lg:items-start">
-                  <span>So if you are interested,</span>
-                  <Link
-                    href={'contact'}
-                    onClick={(e) => {
-                      smoothScrollTo({ e, id: 'contact' });
-                    }}
-                    className="w-52 lg:w-40"
-                  >
-                    <span className="bg-[#cce7e8] text-2xl font-bold uppercase dark:bg-[#42a5ce] lg:normal-case">
-                      Contact me!
-                    </span>
-                  </Link>
-                </p>
-              </div>
-            </div>
-            <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
-              <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#cce7e8] via-[#50bfdb] to-[#42a5ce] transition-opacity group-hover:opacity-20" />
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 h-full">
+            {/* Image Container */}
+            <div className="relative group flex-shrink-0">
+              <div className="relative h-64 w-64 sm:h-72 sm:w-72 lg:h-[380px] lg:w-[380px] xl:h-[450px] xl:w-[450px]">
+                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-electricCyan/20 via-transparent to-neonViolet/20 blur-2xl transition-opacity group-hover:opacity-40" />
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
@@ -86,15 +54,49 @@ export default function About() {
                     placeholder="blur"
                     width={470}
                     height={470}
-                    className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
+                    className="z-10 rounded-full border-2 border-white/10 grayscale transition-all duration-500 group-hover:grayscale-0 object-cover h-full w-full"
                   />
                 </div>
+              </div>
+            </div>
+
+            {/* Text Container */}
+            <div className="flex flex-col gap-6 text-center lg:text-left max-w-2xl">
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                I&apos;m a <span className="text-electricCyan font-bold">Full-Stack Software Engineer</span> specializing in scalable
+                web applications and cloud-native systems. With hands-on
+                experience in <span className="font-mono text-electricCyan text-base">TypeScript, React, Node.js, Python</span>, and cloud
+                platforms like <span className="font-mono text-neonViolet text-base">AWS and Azure</span>, I build intuitive,
+                high-performance solutions. I graduated with a <span className="text-white font-bold">4.0/4.0 GPA</span> from
+                Lamar University, receiving the Graduate Studies Award 2023.
+                I&apos;m passionate about <span className="text-white">clean architecture</span>, automation, and
+                creating seamless developer to deployment pipelines.
+              </p>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                Seeking for Web Development opportunities where I can leverage
+                my skills to create meaningful connections between products
+                and users.
+              </p>
+
+              <div className="flex flex-col items-center lg:items-start mt-4">
+                <span className="mb-4 font-mono text-sm text-gray-400">&gt; ready_to_collaborate?</span>
+                <Link
+                  href={'contact'}
+                  onClick={(e) => {
+                    smoothScrollTo({ e, id: 'contact' });
+                  }}
+                  className="group"
+                >
+                  <span className="inline-block rounded-full bg-electricCyan/10 px-8 py-3 text-lg font-bold uppercase text-electricCyan border border-electricCyan/50 transition hover:bg-electricCyan/20 hover:text-white hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+                    Contact me!
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
       <SectionDivider />
-    </motion.section>
+    </motion.section >
   );
 }

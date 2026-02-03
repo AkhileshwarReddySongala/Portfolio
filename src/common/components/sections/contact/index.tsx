@@ -31,16 +31,16 @@ export default function Contact() {
     >
       <SectionHeading>Hit me up!</SectionHeading>
       <div className="w-[min(100%,38rem)] px-4">
-        <p className="mb-20 mt-6 text-gray-700 dark:text-white/80">
+        <p className="mb-20 mt-6 text-gray-300">
           Please contact me directly at{' '}
-          <a className="underline" href="mailto:akhileshwar.songala@gmail.com">
+          <a className="underline text-electricCyan" href="mailto:akhileshwar.songala@gmail.com">
             akhileshwar.songala@gmail.com
           </a>{' '}
           or through this form.
         </p>
 
         <form
-          className="mt-10 flex flex-col dark:text-black"
+          className="mt-10 flex flex-col font-sans"
           action={async (formData) => {
             const { error } = await sendEmail(formData);
 
@@ -53,7 +53,7 @@ export default function Contact() {
           }}
         >
           <input
-            className="h-14 rounded-lg border bg-gray-50 px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:placeholder:text-darkBg dark:focus:bg-opacity-100"
+            className="h-14 rounded-lg border border-white/10 bg-white/5 px-4 text-white transition-all placeholder:text-gray-500 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-electricCyan/50"
             name="senderEmail"
             type="email"
             required
@@ -61,7 +61,7 @@ export default function Contact() {
             placeholder="Your email"
           />
           <textarea
-            className="my-3 h-52 resize-none rounded-lg border bg-gray-50 p-4 transition-all dark:bg-opacity-80 dark:outline-none dark:placeholder:text-darkBg dark:focus:bg-opacity-100"
+            className="my-3 h-52 resize-none rounded-lg border border-white/10 bg-white/5 p-4 text-white transition-all placeholder:text-gray-500 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-electricCyan/50"
             name="message"
             placeholder="Your message 👋"
             required

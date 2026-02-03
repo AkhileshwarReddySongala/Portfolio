@@ -25,6 +25,10 @@ const config = {
         darkBeige: "#ddbea9",
         darkOcean: "#22333B",
         lightBeige: "#ffcbb4",
+        // New Theme Colors
+        midnight: "#020617", // Deep blue/black
+        electricCyan: "#22d3ee",
+        neonViolet: "#8b5cf6",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -64,6 +68,10 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-jetbrains-mono)"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -73,10 +81,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        glow: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 3s ease-in-out infinite",
+        glow: "glow 2s ease-in-out infinite",
       },
     },
   },

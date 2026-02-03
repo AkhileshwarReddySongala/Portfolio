@@ -41,39 +41,7 @@ export const links = [
   },
 ] as const;
 
-// export const experiencesData = [
-//   {
-//     title: 'Trustsoft s.r.o.',
-//     location: 'Prague, Czechia',
-//     description:
-//       'Front-end Developer. Providing services in the field of information technology services, including administration servers, cloud services, information systems and software development.',
-//     icon: React.createElement(BriefcaseBusinessIcon),
-//     date: 'Oct 2024 - Present',
-//   },
-//   {
-//     title: 'Granton s.r.o.',
-//     location: 'Prague, Czechia',
-//     description:
-//       'Front-end Developer. Delivering flawless UI/UX, Frontend Workflow, Architecture & App Development.',
-//     icon: React.createElement(BriefcaseBusinessIcon),
-//     date: 'Oct 2024 - Present',
-//   },
-//   {
-//     title: 'WhirrCrew s.r.o.',
-//     location: 'Prague, Czechia',
-//     description:
-//       'Front-end Developer. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration.',
-//     icon: React.createElement(BriefcaseBusinessIcon),
-//     date: 'Jun 2024 - Present',
-//   },
-//   {
-//     title: 'NAU',
-//     location: 'Kyiv, Ukraine',
-//     description: `Bachelor's degree in Cybersecurity. The faculty of Cyber Security and Software Engineering.`,
-//     icon: React.createElement(BookIcon),
-//     date: 'Sep 2022 - Jun 2024',
-//   },
-// ] as const;
+
 
 export const experiencesData = [
   {
@@ -85,10 +53,10 @@ export const experiencesData = [
     date: 'May 2024 – Present',
   },
   {
-    title: "Master's in Management Information Systems  (MIS)",
+    title: "Master of Science in Management Information Systems",
     location: 'Lamar University, Texas, USA',
     description:
-      'Focus in Full Stack Development, Cyber Securities and Data Mining and Predictive Analytics. CGPA: 4.0/4.0',
+      'Focus in Full Stack Development, Cyber Securities and Data Mining and Predictive Analytics. GPA: 4.0/4.0',
     icon: React.createElement(BookIcon),
     date: 'Aug 2022 – May 2024',
   },
@@ -100,14 +68,6 @@ export const experiencesData = [
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Aug 2022 – Jan 2023',
   },
-  /*{
-    title: 'Custom Software Engineering Associate',
-    location: 'Accenture Solutions Pvt. Ltd, Hyderabad, India',
-    description:
-      'Designed and implemented scalable microservices using Java Spring Boot, reducing API response times by 30%. Led cloud deployment automation on AWS and Azure using Terraform. Mentored junior developers and improved cross-functional collaboration across Agile teams.',
-    icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Aug 2022 – Jun 2023',
-  },*/
   {
     title: 'Software Engineer',
     location: 'MRF LTD, Hyderabad, Telangana',
@@ -132,23 +92,6 @@ export const experiencesData = [
     date: 'Aug 2017 – May 2021',
   },
 
-  /*
-    {
-      title: 'Custom Software Engineering Associate',
-      location: 'Accenture Solutions Pvt. Ltd, Hyderabad, India',
-      description:
-        'Developed and automated risk exposure processes using Python, reducing manual effort by 65%. Collaborated with global teams to analyze SQL reports and improve project delivery using Agile (Kanban), JIRA, and qTest.',
-      icon: React.createElement(BriefcaseBusinessIcon),
-      date: 'Aug 2021 – Jul 2022',
-    },
-    {
-      title: 'Software Engineer Intern',
-      location: 'Plural Technology Private Limited, Pune, India',
-      description:
-        'Built ML models for predictive maintenance in aerospace logistics. Enhanced the company website with real-time dashboards for better decision-making.',
-      icon: React.createElement(BriefcaseBusinessIcon),
-      date: 'Feb 2021 – Jul 2021',
-    },*/
 ] as const;
 
 export const images = {
@@ -160,73 +103,6 @@ export const images = {
   saralyticsImg,
   spendifyImg,
 };
-
-// export const projectsData = [
-//   {
-//     title: 'Audit Master',
-//     description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, Due Diligence & more.`,
-//     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'SCRUM Methodology'],
-//     imageUrl: auditMasterImg,
-//     link: 'https://auditmaster.ai/',
-//   },
-//   {
-//     title: 'Demo Automation of accounting documents processing',
-//     description:
-//       'Upload any receipt or invoice (even a crumpled one from your pocket) and watch our AI accurately extract its data.',
-//     tags: ['TypeScript', 'React', 'Docker', 'Next.js', 'GraphQL', 'Tailwind'],
-//     imageUrl: accountingImg,
-//     link: 'https://demo.grantonai.cz/',
-//   },
-//   {
-//     title: 'FileDrive',
-//     description:
-//       'A platform for decentralized file storage with robust user management.',
-//     tags: [
-//       'React',
-//       'TypeScript',
-//       'Next.js',
-//       'Convex',
-//       'Clerk',
-//       'Shadcn',
-//       'Tailwind',
-//     ],
-//     imageUrl: filedriveImg,
-//     link: 'https://github.com/bbyc4kes/file-drive',
-//   },
-//   {
-//     title: 'Portfolio',
-//     description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
-//     tags: [
-//       'React',
-//       'TypeScript',
-//       'Next.js',
-//       'Framer Motion',
-//       'Cloudinary',
-//       'React Email',
-//       'Tailwind',
-//     ],
-//     imageUrl: portfolioImg,
-//     link: 'https://github.com/bbyc4kes/portfolio',
-//   },
-
-//   {
-//     title: 'Surge',
-//     description:
-//       'Service that allows users to build and manage their own websites with integrated payment processing.',
-//     tags: [
-//       'React',
-//       'TypeScript',
-//       'Next.js',
-//       'MySQL',
-//       'Clerk',
-//       'Stripe Connect',
-//       'Shadcn',
-//       'Tailwind',
-//     ],
-//     imageUrl: surgeImg,
-//     link: 'https://github.com/bbyc4kes/surge',
-//   },
-// ] as const;
 
 export const projectsData = [
   {
@@ -263,7 +139,7 @@ export const projectsData = [
   {
     title: 'Developer Portfolio Website',
     description:
-      'Designed and built a fully responsive personal portfolio using modern HTML5, CSS3, and JavaScript, deployed to Vercel to demonstrate a complete development-to-production workflow.',
+      'Portfolio that you\'re currently viewing! This project showcases my work and provides information about me. Designed and built a fully responsive personal portfolio using modern HTML5, CSS3, and JavaScript, deployed to Vercel to demonstrate a complete development-to-production workflow.',
     tags: ['HTML5', 'CSS3', 'JavaScript', 'Vercel', 'Next.js', 'React', 'Tailwind'],
     imageUrl: portfolioImg,
     link: 'https://github.com/AkhileshwarReddySongala',

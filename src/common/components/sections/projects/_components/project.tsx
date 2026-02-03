@@ -15,36 +15,43 @@ export default function Project({
   imageUrl,
   link,
 }: ProjectProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['0 1', '1.33 1'],
-  });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-
   return (
     <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
-      }}
-      className="group mb-3 last:mb-0 sm:mb-8"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, type: 'spring' }}
+      viewport={{ once: true }}
+      className="group h-full"
     >
-      <Link href={link} target="_blank">
-        <section
-          className={
-            'relative max-w-[52rem] overflow-hidden rounded-lg border transition hover:bg-gray-200 dark:hover:bg-primary-foreground sm:h-[28rem]'
-          }
-        >
-          <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
-            <h3 className="text-2xl font-semibold uppercase"> {title}</h3>
-            <p className="mt-2 leading-relaxed">{description}</p>
-            <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
+      <Link href={link} target="_blank" className="block h-full">
+        <article className="glass-card flex h-full flex-col overflow-hidden rounded-xl border border-white/10 transition-all duration-300 hover:border-electricCyan/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] hover:-translate-y-2">
+
+          {/* Image Section */}
+          <div className="relative h-64 w-full overflow-hidden bg-gray-900 border-b border-white/5">
+            <Image
+              src={imageUrl}
+              alt={title}
+              quality={95}
+              className="absolute inset-0 h-full w-full object-cover opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+          </div>
+
+          {/* Content Section */}
+          <div className="flex flex-1 flex-col p-6">
+            <h3 className="mb-2 font-mono text-xl font-bold text-white group-hover:text-electricCyan transition-colors">
+              {title}
+            </h3>
+
+            <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-400">
+              {description}
+            </p>
+
+            {/* Tags */}
+            <ul className="flex flex-wrap gap-2 mt-auto">
               {tags.map((tag, index) => (
                 <li
-                  className="rounded-full bg-[#cce7e8] px-3 py-1 text-[0.7rem] uppercase tracking-wider dark:bg-[#42a5ce] dark:text-black"
+                  className="rounded px-2 py-1 text-[0.7rem] font-mono text-electricCyan bg-electricCyan/5 border border-electricCyan/20"
                   key={index}
                 >
                   {tag}
@@ -52,14 +59,7 @@ export default function Project({
               ))}
             </ul>
           </div>
-
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-            className="absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-lg transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 sm:block"
-          />
-        </section>
+        </article>
       </Link>
     </motion.div>
   );

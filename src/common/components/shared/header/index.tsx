@@ -22,7 +22,7 @@ export default function Header() {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-2 text-[0.9rem] font-medium transition-colors sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <motion.li
-              className="relative flex h-3/4 items-center justify-center text-black dark:text-white"
+              className="relative flex h-3/4 items-center justify-center text-gray-300 hover:text-white"
               key={link.id}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -40,7 +40,7 @@ export default function Header() {
 
                 {link.id === activeSection && (
                   <motion.span
-                    className="absolute inset-0 -z-10 rounded-full bg-[#cce7e8] dark:bg-[#42a5ce]"
+                    className="absolute inset-0 -z-10 rounded-full bg-electricCyan/20 border border-electricCyan/50"
                     layoutId="activeSection"
                     transition={{
                       type: 'spring',

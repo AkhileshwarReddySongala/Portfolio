@@ -6,12 +6,12 @@ import CursorBlinker from "./cursor-blinker";
 
 export interface ITextAnimationProps {
   delay: number;
-  baseText: string;
+  baseText?: string;
 }
 
 export default function TextAnimation({
   delay,
-  baseText,
+  baseText = "",
 }: ITextAnimationProps) {
   const [done, setDone] = useState(false);
   const count = useMotionValue(0);
@@ -36,14 +36,14 @@ export default function TextAnimation({
 
   return (
     <motion.span
-      initial={{ y: -100, x: "-50%", opacity: 0 }}
-      animate={{ y: 0, x: "-50%", opacity: 1 }}
-      className="mb-10 h-64 max-w-96 text-start text-[2rem] font-extrabold lg:text-[3rem]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="mt-6 block font-mono text-lg font-medium text-gray-300 md:text-xl leading-relaxed"
     >
       <motion.span>{displayText}</motion.span>
       {done && (
         <>
-          <br />
+          <br className="hidden sm:block" />
         </>
       )}
       <RedoAnimText delay={delay + 1} />
