@@ -1,16 +1,18 @@
 'use client';
 
+import { useTheme } from 'next-themes';
 import React from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+
 import 'react-vertical-timeline-component/style.min.css';
-import { useTheme } from 'next-themes';
-import { useHasMounted, useSectionInView } from '@/common/lib/hooks';
+
+import SectionDivider from '@/common/components/shared/section-divider';
 import SectionHeading from '@/common/components/shared/section-heading';
 import { experiencesData } from '@/common/lib/data';
-import SectionDivider from '@/common/components/shared/section-divider';
+import { useHasMounted, useSectionInView } from '@/common/lib/hooks';
 
 export default function Experience() {
   const { ref } = useSectionInView('experience');
@@ -52,7 +54,9 @@ export default function Experience() {
                   dateClassName="text-white/70 font-mono text-sm"
                 >
                   <h3 className="font-bold text-white text-xl">{item.title}</h3>
-                  <p className="!mt-0 font-medium text-electricCyan">{item.location}</p>
+                  <p className="!mt-0 font-medium text-electricCyan">
+                    {item.location}
+                  </p>
                   <p className="!mt-2 !font-normal text-gray-300 leading-relaxed">
                     {item.description}
                   </p>

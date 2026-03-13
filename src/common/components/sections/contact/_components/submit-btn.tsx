@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaPaperPlane } from 'react-icons/fa';
 import { useFormStatus } from 'react-dom';
+import { FaPaperPlane } from 'react-icons/fa';
+
 import { Button } from '@/common/components/ui';
 
 export default function SubmitBtn() {

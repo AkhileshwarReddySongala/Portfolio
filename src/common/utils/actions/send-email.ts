@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Resend } from 'resend';
+
 import ContactFormEmail from '@/common/components/sections/contact/_components/contact-form-email';
 import { getErrorMessage, validateString } from '@/common/lib/utils';
 

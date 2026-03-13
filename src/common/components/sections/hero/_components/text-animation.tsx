@@ -1,8 +1,9 @@
-"use client";
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import RedoAnimText from "./redo-text-animation";
-import CursorBlinker from "./cursor-blinker";
+'use client';
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+
+import CursorBlinker from './cursor-blinker';
+import RedoAnimText from './redo-text-animation';
 
 export interface ITextAnimationProps {
   delay: number;
@@ -11,7 +12,7 @@ export interface ITextAnimationProps {
 
 export default function TextAnimation({
   delay,
-  baseText = "",
+  baseText = '',
 }: ITextAnimationProps) {
   const [done, setDone] = useState(false);
   const count = useMotionValue(0);
@@ -22,10 +23,10 @@ export default function TextAnimation({
 
   useEffect(() => {
     const controls = animate(count, baseText.length, {
-      type: "tween",
+      type: 'tween',
       delay: delay,
       duration: 1,
-      ease: "easeInOut",
+      ease: 'easeInOut',
       onComplete: () => {
         setDone(true);
       },

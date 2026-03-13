@@ -1,10 +1,11 @@
 'use client';
 
-import { useRef } from 'react';
-import { projectsData } from '@/common/lib/data';
-import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
+import { useRef } from 'react';
+
+import { projectsData } from '@/common/lib/data';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -25,7 +26,6 @@ export default function Project({
     >
       <Link href={link} target="_blank" className="block h-full">
         <article className="glass-card flex h-full flex-col overflow-hidden rounded-xl border border-white/10 transition-all duration-300 hover:border-electricCyan/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] hover:-translate-y-2">
-
           {/* Image Section */}
           <div className="relative h-64 w-full overflow-hidden bg-gray-900 border-b border-white/5">
             <Image

@@ -1,18 +1,17 @@
+import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 import React from 'react';
 
+import accountingImg from '@/../public/images/accounting.jpg';
+import auditMasterImg from '@/../public/images/audit-master.png';
 import campwithusImg from '@/../public/images/camp-with-us.png';
-import carcatalogImg from '@/../public/images/virtual-store.png';
 import filedriveImg from '@/../public/images/file-drive.png';
 import projectmanagementImg from '@/../public/images/financial-risk-management.png';
-import reactfoodImg from '@/../public/images/react-food.png';
-import surgeImg from '@/../public/images/surge.png';
 import portfolioImg from '@/../public/images/portfolio.png';
-import auditMasterImg from '@/../public/images/audit-master.png';
-import accountingImg from '@/../public/images/accounting.jpg';
+import reactfoodImg from '@/../public/images/react-food.png';
 import saralyticsImg from '@/../public/images/saralytics.jpg';
 import spendifyImg from '@/../public/images/spendify.png';
-import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
-
+import surgeImg from '@/../public/images/surge.png';
+import carcatalogImg from '@/../public/images/virtual-store.png';
 
 export const links = [
   {
@@ -36,12 +35,18 @@ export const links = [
     id: 'skills',
   },
   {
+    name: 'Badges',
+    id: 'badges',
+  },
+  {
+    name: 'Certifications',
+    id: 'certifications',
+  },
+  {
     name: 'Contact',
     id: 'contact',
   },
 ] as const;
-
-
 
 export const experiencesData = [
   {
@@ -53,7 +58,7 @@ export const experiencesData = [
     date: 'May 2024 – Present',
   },
   {
-    title: "Master of Science in Management Information Systems",
+    title: 'Master of Science in Management Information Systems',
     location: 'Lamar University, Texas, USA',
     description:
       'Focus in Full Stack Development, Cyber Securities and Data Mining and Predictive Analytics. GPA: 4.0/4.0',
@@ -87,11 +92,11 @@ export const experiencesData = [
   {
     title: 'Bachelor of Technology in Mechanical Engineering',
     location: 'Vellore Institute of Technology, Andhra Pradesh, India',
-    description: 'Focus on Object Oriented Programing, Data Structures and Algorithms, Thermodynamics and Fluid Dynamics GPA: 3.2',
+    description:
+      'Focus on Object Oriented Programing, Data Structures and Algorithms, Thermodynamics and Fluid Dynamics GPA: 3.2',
     icon: React.createElement(BookIcon),
     date: 'Aug 2017 – May 2021',
   },
-
 ] as const;
 
 export const images = {
@@ -139,8 +144,16 @@ export const projectsData = [
   {
     title: 'Developer Portfolio Website',
     description:
-      'Portfolio that you\'re currently viewing! This project showcases my work and provides information about me. Designed and built a fully responsive personal portfolio using modern HTML5, CSS3, and JavaScript, deployed to Vercel to demonstrate a complete development-to-production workflow.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'Vercel', 'Next.js', 'React', 'Tailwind'],
+      "Portfolio that you're currently viewing! This project showcases my work and provides information about me. Designed and built a fully responsive personal portfolio using modern HTML5, CSS3, and JavaScript, deployed to Vercel to demonstrate a complete development-to-production workflow.",
+    tags: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Vercel',
+      'Next.js',
+      'React',
+      'Tailwind',
+    ],
     imageUrl: portfolioImg,
     link: 'https://github.com/AkhileshwarReddySongala',
   },
@@ -195,4 +208,68 @@ export const skillsData = [
 
   // ➕ Misc
   ['', '/svgs/etc.svg'],
+] as const;
+
+export const badgesData = [
+  {
+    title: 'Build a Smart Cloud Application with Vibe Coding and MCP',
+    imageUrl:
+      '/images/Badges/Build a Smart Cloud Application with Vibe Coding and MCP.png',
+    link: 'https://www.skills.google/public_profiles/39119773-1294-49b7-bb22-cda63c2e8f41/badges/22947596',
+  },
+  {
+    title: 'Engineer AI Agents with Agent Development Kit (ADK)',
+    imageUrl:
+      '/images/Badges/Engineer AI Agents with Agent Development Kit (ADK).png',
+    link: 'https://www.skills.google/public_profiles/39119773-1294-49b7-bb22-cda63c2e8f41/badges/22952050',
+  },
+] as const;
+
+export const certificationsData = [
+  {
+    title: '5-Day AI Agents Intensive Course with Google',
+    imageUrl:
+      '/images/certifications/5-Day AI Agents Intensive Course with Google (1).png',
+    link: 'https://www.kaggle.com/certification/badges/akhilsongala/105',
+  },
+  {
+    title: 'Data Visualization',
+    imageUrl:
+      '/images/certifications/Akhileshwar Reddy Songala - Data Visualization (1).png',
+    link: 'https://www.kaggle.com/learn/certification/akhilsongala/data-visualization',
+  },
+  {
+    title: 'Intro to Machine Learning',
+    imageUrl:
+      '/images/certifications/Akhileshwar Reddy Songala - Intro to Machine Learning.png',
+    link: 'https://www.kaggle.com/learn/certification/akhilsongala/intro-to-machine-learning',
+  },
+  {
+    title: 'Python',
+    imageUrl: '/images/certifications/Akhileshwar Reddy Songala - Python.png',
+    link: 'https://www.kaggle.com/learn/certification/akhilsongala/python',
+  },
+  {
+    title: 'Salesforce Certified Platform Administrator',
+    imageUrl:
+      '/images/certifications/Cert5131485_PlatformAdministrator_20241026.png',
+    link: 'https://sforce.co/verifycerts',
+  },
+  {
+    title: 'Salesforce Certified Platform Developer I',
+    imageUrl:
+      '/images/certifications/Cert5739366_PlatformDeveloper_20250204.png',
+    link: 'https://sforce.co/verifycerts',
+  },
+  {
+    title: 'Salesforce Certified Service Cloud Consultant',
+    imageUrl:
+      '/images/certifications/Cert5942529_ServiceCloudConsultant_20250326.png',
+    link: 'https://sforce.co/verifycerts',
+  },
+  {
+    title: 'Responsive Web Design',
+    imageUrl: '/images/certifications/Responsive Web Design.png',
+    link: 'https://www.freecodecamp.org/certification/akhil_songala/responsive-web-design-v9',
+  },
 ] as const;

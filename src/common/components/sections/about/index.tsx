@@ -1,14 +1,15 @@
 'use client';
 
-import { useSectionInView } from '@/common/lib/hooks';
-import portfolioImg from '@/../public/images/new.png';
-import { smoothScrollTo } from '@/common/lib/utils';
-import SectionDivider from '@/common/components/shared/section-divider';
-import SectionHeading from '@/common/components/shared/section-heading';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { useRef } from 'react';
 import Link from 'next/link';
+import { useRef } from 'react';
+
+import portfolioImg from '@/../public/images/new.png';
+import SectionDivider from '@/common/components/shared/section-divider';
+import SectionHeading from '@/common/components/shared/section-heading';
+import { useSectionInView } from '@/common/lib/hooks';
+import { smoothScrollTo } from '@/common/lib/utils';
 
 export default function About() {
   const { ref } = useSectionInView('about', 0.4);
@@ -63,23 +64,37 @@ export default function About() {
             {/* Text Container */}
             <div className="flex flex-col gap-6 text-center lg:text-left max-w-2xl">
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                I&apos;m a <span className="text-electricCyan font-bold">Full-Stack Software Engineer</span> specializing in scalable
-                web applications and cloud-native systems. With hands-on
-                experience in <span className="font-mono text-electricCyan text-base">TypeScript, React, Node.js, Python</span>, and cloud
-                platforms like <span className="font-mono text-neonViolet text-base">AWS and Azure</span>, I build intuitive,
-                high-performance solutions. I graduated with a <span className="text-white font-bold">4.0/4.0 GPA</span> from
-                Lamar University, receiving the Graduate Studies Award 2023.
-                I&apos;m passionate about <span className="text-white">clean architecture</span>, automation, and
-                creating seamless developer to deployment pipelines.
+                I&apos;m a{' '}
+                <span className="text-electricCyan font-bold">
+                  Full-Stack Software Engineer
+                </span>{' '}
+                specializing in scalable web applications and cloud-native
+                systems. With hands-on experience in{' '}
+                <span className="font-mono text-electricCyan text-base">
+                  TypeScript, React, Node.js, Python
+                </span>
+                , and cloud platforms like{' '}
+                <span className="font-mono text-neonViolet text-base">
+                  AWS and Azure
+                </span>
+                , I build intuitive, high-performance solutions. I graduated
+                with a <span className="text-white font-bold">4.0/4.0 GPA</span>{' '}
+                from Lamar University, receiving the Graduate Studies Award
+                2023. I&apos;m passionate about{' '}
+                <span className="text-white">clean architecture</span>,
+                automation, and creating seamless developer to deployment
+                pipelines.
               </p>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 Seeking for Web Development opportunities where I can leverage
-                my skills to create meaningful connections between products
-                and users.
+                my skills to create meaningful connections between products and
+                users.
               </p>
 
               <div className="flex flex-col items-center lg:items-start mt-4">
-                <span className="mb-4 font-mono text-sm text-gray-400">&gt; ready_to_collaborate?</span>
+                <span className="mb-4 font-mono text-sm text-gray-400">
+                  &gt; ready_to_collaborate?
+                </span>
                 <Link
                   href={'contact'}
                   onClick={(e) => {
@@ -97,6 +112,6 @@ export default function About() {
         </motion.div>
       </div>
       <SectionDivider />
-    </motion.section >
+    </motion.section>
   );
 }

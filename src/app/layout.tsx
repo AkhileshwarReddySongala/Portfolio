@@ -1,18 +1,24 @@
 import type { Metadata } from 'next';
-import { Montserrat as FontMontserrat, Inter, JetBrains_Mono } from 'next/font/google';
-import { cn } from '@/common/lib/utils';
-import '@/common/styles/globals.css';
+
+import {
+  Montserrat as FontMontserrat,
+  Inter,
+  JetBrains_Mono,
+} from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
+
+import Footer from '@/common/components/shared/footer';
+import Header from '@/common/components/shared/header';
+import { cn } from '@/common/lib/utils';
 import ActiveSectionContextProvider from '@/common/stores/active-section';
 import { ThemeProvider } from '@/common/theme/theme-provider';
-import Header from '@/common/components/shared/header';
-import Footer from '@/common/components/shared/footer';
-import { ModeToggle } from '@/common/theme/mode-toggler';
+
+import '@/common/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Akhileshwar Reddy Songala | Portfolio',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Ben Gideon Dokiburra! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
+    'Check out modern and stylish porfolio of an experienced Web Developer Akhileshwar Reddy Songala! Built using TypeScript, Next.js 14, Framer Motion and Tailwind CSS.',
 };
 
 const fontMontserrat = FontMontserrat({
@@ -36,23 +42,20 @@ export default function RootLayout({
         className={cn(
           'relative flex items-center justify-center font-sans',
           inter.variable,
-          jetbrainsMono.variable
+          jetbrainsMono.variable,
         )}
       >
         <div className="flex min-h-screen w-full flex-col">
           <ActiveSectionContextProvider>
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
-              enableSystem
+              defaultTheme="dark"
+              forcedTheme="dark"
               disableTransitionOnChange
             >
               <Header />
               {children}
               <Footer />
-              <div className="fixed left-1 right-auto top-1 z-[99] sm:bottom-6 sm:left-6 sm:top-auto">
-                <ModeToggle />
-              </div>
               <Toaster position="top-right" />
             </ThemeProvider>
           </ActiveSectionContextProvider>

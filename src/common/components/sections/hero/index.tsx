@@ -1,14 +1,17 @@
 'use client';
 
 import 'next-cloudinary/dist/cld-video-player.css';
-import SectionDivider from '@/common/components/shared/section-divider';
-import TextAnimation from './_components/text-animation';
-import { useSectionInView } from '@/common/lib/hooks';
-import { useActiveSectionContext } from '@/common/stores/active-section';
-import { smoothScrollTo } from '@/common/lib/utils';
 import { motion } from 'framer-motion';
 import { Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import { SiGoogle, SiSalesforce } from 'react-icons/si';
+
+import SectionDivider from '@/common/components/shared/section-divider';
+import { useSectionInView } from '@/common/lib/hooks';
+import { smoothScrollTo } from '@/common/lib/utils';
+import { useActiveSectionContext } from '@/common/stores/active-section';
+
+import TextAnimation from './_components/text-animation';
 
 export default function Hero() {
   const { ref } = useSectionInView('home');
@@ -22,9 +25,7 @@ export default function Hero() {
         ref={ref}
       >
         <div
-          className={
-            'absolute left-0 top-0 h-screen w-full bg-[#020617]/80'
-          }
+          className={'absolute left-0 top-0 h-screen w-full bg-[#020617]/80'}
         ></div>
         <video
           width="480"
@@ -107,6 +108,30 @@ export default function Hero() {
                     alt="github icon"
                     className="invert"
                   />
+                </a>
+                <a
+                  className="flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white/5 p-2 text-white border border-white/10 transition hover:bg-white/10 hover:text-electricCyan backdrop-blur-md"
+                  href="https://g.dev/akhileshwar"
+                  target="_blank"
+                  title="Google Developer Profile"
+                >
+                  <SiGoogle className="text-2xl" />
+                </a>
+                <a
+                  className="flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white/5 p-2 text-white border border-white/10 transition hover:bg-white/10 hover:text-electricCyan backdrop-blur-md"
+                  href="https://www.skills.google/public_profiles/39119773-1294-49b7-bb22-cda63c2e8f41"
+                  target="_blank"
+                  title="Google Skills Profile"
+                >
+                  <SiGoogle className="text-2xl" />
+                </a>
+                <a
+                  className="flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white/5 p-2 text-white border border-white/10 transition hover:bg-white/10 hover:text-electricCyan backdrop-blur-md"
+                  href="https://trailhead.salesforce.com/en/me/akhilsongala"
+                  target="_blank"
+                  title="Salesforce Profile"
+                >
+                  <SiSalesforce className="text-2xl" />
                 </a>
               </div>
             </motion.div>
