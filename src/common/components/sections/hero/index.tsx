@@ -28,14 +28,13 @@ export default function Hero() {
           className={'absolute left-0 top-0 h-screen w-full bg-[#020617]/80'}
         ></div>
         <video
-          width="480"
-          height="720"
-          preload="none"
+          preload="auto"
           autoPlay
-          crossOrigin="anonymous"
+          playsInline
           muted
           loop
-          className="absolute -z-10 h-screen w-screen object-cover"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+          style={{ transform: 'translateZ(0)', willChange: 'transform' }}
         >
           <source src="/layout3.mp4" />
         </video>
