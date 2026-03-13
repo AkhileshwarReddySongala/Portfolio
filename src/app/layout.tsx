@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import { Analytics } from '@vercel/analytics/next';
 import {
   Montserrat as FontMontserrat,
   Inter,
@@ -60,6 +61,7 @@ export default function RootLayout({
             </ThemeProvider>
           </ActiveSectionContextProvider>
         </div>
+        <Analytics />
       </body>
     </html>
   );
